@@ -17,3 +17,6 @@ Python using the curses module, and follows all the same rules as the original P
 - `WASD` to move
 - `space` to open cell
 - `f` to flag
+
+# New edit
+later
