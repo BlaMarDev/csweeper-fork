@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # Open source software written by Jack D.V. Carson
 
-import sys,os
 import curses
 import board_create
 import numpy as np
@@ -33,7 +32,6 @@ colordict = {
         }
 
 
-
 def draw_menu(stdscr):
     # Keystroke variable
     k = 0
@@ -42,7 +40,6 @@ def draw_menu(stdscr):
     # Cursor start position
     cursor_x = 0
     cursor_y = 0
-
 
     # Clear and refresh the screen for a blank canvas
     stdscr.clear()
@@ -59,7 +56,6 @@ def draw_menu(stdscr):
     curses.init_pair(7, curses.COLOR_MAGENTA, curses.COLOR_BLACK) # COLOR 3
     curses.init_pair(8, curses.COLOR_BLACK, curses.COLOR_BLACK) # Invisible
     curses.init_pair(9, curses.COLOR_CYAN, curses.COLOR_BLACK)
-    
 
     # Loop where k is the last character pressed
     locations = []
@@ -182,7 +178,6 @@ def draw_menu(stdscr):
 
 def main():
     curses.wrapper(draw_menu)
-
 
 
 if __name__ == "__main__":
